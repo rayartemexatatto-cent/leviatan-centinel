@@ -1,2 +1,2 @@
-# leviatan-tlaquepaque
-🌊 Leviatán de tlaquepaque - Terminal poesia
+# leviatan-centinel
+🌊 Leviatán de centinel - Terminal poesia
