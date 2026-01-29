@@ -61,7 +61,7 @@ Tecnologías (ejemplos)
 
 Instalación (ejemplo)
 1. Clona el repositorio:
-   git clone https://github.com/tu-usuario/leviatan.git
+   git clone 
 2. Entra al directorio:
    cd leviatan
 3. Instala dependencias (ejemplo Node):
