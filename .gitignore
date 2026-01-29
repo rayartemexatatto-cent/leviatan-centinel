@@ -1,0 +1,72 @@
+# Sensitive Files - NEVER commit these
+*.env
+*.env.*
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+.secret
+secret.txt
+secret.json
+secret.yml
+passwords.txt
+.password
+credentials.json
+credentials.txt
+.aws/
+.ssh/
+
+# API Keys and Tokens
+*.token
+*.apikey
+config/local*
+local-config.*
+
+# Build artifacts
+dist/
+build/
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Dependencies
+node_modules/
+vendor/
+.bundle/
+venv/
+__pycache__/
+*.pyc
+.Python
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS Files
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+
+# Database files (may contain sensitive data)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+

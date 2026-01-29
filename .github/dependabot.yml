@@ -1,0 +1,14 @@
+# Dependabot Configuration
+# Automatically checks for dependency updates and security vulnerabilities
+
+version: 2
+updates:
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "github-actions"
+
