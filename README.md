@@ -75,3 +75,23 @@ Contribuir
 
 Licencia
 - Este proyecto está bajo la licencia MIT. Véase LICENSE.
+# CENTINEL — Índice del proyecto
+
+Este repositorio contiene la obra fundacional del Proyecto CENTINEL, organizada en cuatro volúmenes:
+
+- volumen-1/ — DESPERTAR
+- volumen-2/ — RESILIENCIA
+- volumen-3/ — TRASCENDER
+- volumen-4/ — LEGADO
+
+Propósito: documentar la arquitectura de soberanía digital y dejar una guía transmisible para ISABELLA y para quienes preserven el proyecto.
+
+Estructura propuesta:
+- MASTER_DOCUMENT.md (obra consolidada)
+- volumen-1/README.md
+- volumen-2/README.md
+- volumen-3/README.md
+- volumen-4/README.md
+
+Estado: versión inicial lista para revisión.  
+Siguiente paso: indicar si quieres que genere archivos adicionales (seguridad, playstore shield, plantillas para ISABELLA, licencias).
