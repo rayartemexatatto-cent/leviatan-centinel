@@ -11,6 +11,12 @@ This project is protected by copyright and intellectual property laws. Unauthori
 
 **Copyright © 2026 Levi Calderon Zarate. All rights reserved.**
 
+### 🆘 EMERGENCY - Account Stolen?
+
+If your GitHub account was compromised:
+- 🇪🇸 **Español**: [RECUPERAR_CUENTA.md](./RECUPERAR_CUENTA.md) - Sigue esta guía AHORA
+- 🇬🇧 **English**: [ACCOUNT_RECOVERY.md](./ACCOUNT_RECOVERY.md) - Follow this guide NOW
+
 ## 🔒 Security Features
 
 This repository implements comprehensive security measures to protect against unauthorized access and theft:
