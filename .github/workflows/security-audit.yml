@@ -13,6 +13,9 @@ jobs:
   security-audit:
     name: Security Vulnerability Audit
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
     
     steps:
     - name: Checkout code
