@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run Trivy vulnerability scanner
-      uses: aquasecurity/trivy-action@master
+      uses: aquasecurity/trivy-action@0.28.0
       with:
         scan-type: 'fs'
         scan-ref: '.'
@@ -31,10 +31,3 @@ jobs:
       with:
         sarif_file: 'trivy-results.sarif'
 
-    - name: Run dependency check
-      run: |
-        echo "Checking for vulnerable dependencies..."
-        # Add specific dependency checking commands based on your tech stack
-        # For Node.js: npm audit
-        # For Python: pip-audit
-        # For Ruby: bundle audit

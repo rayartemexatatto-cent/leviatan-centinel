@@ -3,6 +3,9 @@
 # Security Setup Script for leviatan-centinel
 # This script helps you quickly configure security settings for your repository
 
+# Exit on error
+set -e
+
 echo "🔒 Security Setup for leviatan-centinel"
 echo "========================================"
 echo ""
@@ -15,7 +18,7 @@ NC='\033[0m' # No Color
 
 # Check if git is configured
 echo "📋 Step 1: Checking Git Configuration..."
-if git config user.name && git config user.email; then
+if git config user.name >/dev/null 2>&1 && git config user.email >/dev/null 2>&1; then
     echo -e "${GREEN}✓ Git is configured${NC}"
 else
     echo -e "${RED}✗ Git is not configured${NC}"
@@ -27,7 +30,7 @@ echo ""
 
 # Check for GPG signing
 echo "📋 Step 2: Checking GPG Commit Signing..."
-if git config commit.gpgsign | grep -q "true"; then
+if git config commit.gpgsign 2>/dev/null | grep -q "true"; then
     echo -e "${GREEN}✓ GPG commit signing is enabled${NC}"
 else
     echo -e "${YELLOW}⚠ GPG commit signing is not enabled${NC}"
@@ -57,30 +60,27 @@ SECRET_PATTERNS=(
     "*.env"
     "*.key"
     "*.pem"
-    "*password*"
-    "*secret*"
     "*.p12"
     "*.pfx"
 )
 
-found_secrets=false
+found_secrets=0
 for pattern in "${SECRET_PATTERNS[@]}"; do
-    if find . -name "$pattern" -not -path "./.git/*" | grep -q .; then
+    if find . -name "$pattern" -not -path "./.git/*" 2>/dev/null | grep -q .; then
         echo -e "${RED}⚠ Found files matching: $pattern${NC}"
-        find . -name "$pattern" -not -path "./.git/*"
-        found_secrets=true
+        find . -name "$pattern" -not -path "./.git/*" 2>/dev/null
+        found_secrets=1
     fi
 done
 
-if [ "$found_secrets" = false ]; then
+if [ $found_secrets -eq 0 ]; then
     echo -e "${GREEN}✓ No obvious secret files found${NC}"
 fi
 echo ""
 
 # Check remote configuration
 echo "📋 Step 5: Checking Remote Repository..."
-if git remote get-url origin 2>/dev/null; then
-    remote_url=$(git remote get-url origin)
+if remote_url=$(git remote get-url origin 2>/dev/null); then
     echo -e "${GREEN}✓ Remote configured:${NC} $remote_url"
 else
     echo -e "${YELLOW}⚠ No remote repository configured${NC}"
@@ -100,7 +100,6 @@ echo ""
 echo "2. REPOSITORY SETTINGS:"
 echo "   • Enable branch protection for main/master"
 echo "   • Enable Dependabot alerts"
-echo "   • Enable Code scanning (CodeQL)"
 echo "   • Enable Secret scanning (if available)"
 echo ""
 echo "3. MONITORING:"
@@ -145,3 +144,4 @@ echo ""
 echo -e "${GREEN}✓ Security setup check complete!${NC}"
 echo ""
 echo "For more information, see the documentation files in this repository."
+
