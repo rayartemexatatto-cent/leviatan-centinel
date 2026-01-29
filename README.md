@@ -44,3 +44,34 @@ proot-distro install archlinux         # Nodo expandido
 echo "raiz:dar_y_cuidar"
 echo "tronco:expandir"
 echo "hojas:vivir"
+# Leviatán
+
+Descripción corta: Leviatán es [describe aquí qué hace el proyecto].
+
+Estado: En desarrollo — primer MVP.
+
+Objetivos
+- Objetivo principal 1
+- Objetivo secundario 2
+
+Tecnologías (ejemplos)
+- Backend: Node.js / Python / Go (elige)
+- Frontend: React / Vue / Svelte (si aplica)
+- Base de datos: PostgreSQL / MongoDB (si aplica)
+
+Instalación (ejemplo)
+1. Clona el repositorio:
+   git clone https://github.com/tu-usuario/leviatan.git
+2. Entra al directorio:
+   cd leviatan
+3. Instala dependencias (ejemplo Node):
+   npm install
+4. Ejecuta en desarrollo:
+   npm run dev
+
+Contribuir
+- Lee CONTRIBUTING.md para guías de contribución.
+- Abre issues para bugs o features.
+
+Licencia
+- Este proyecto está bajo la licencia MIT. Véase LICENSE.
