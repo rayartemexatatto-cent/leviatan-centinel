@@ -95,3 +95,42 @@ Estructura propuesta:
 
 Estado: versión inicial lista para revisión.  
 Siguiente paso: indicar si quieres que genere archivos adicionales (seguridad, playstore shield, plantillas para ISABELLA, licencias).
+# Leviatán: El Proyecto de Soberanía Digital 🌐
+
+### Introducción
+Leviatán es más que tecnología; es una declaración de propósito. Este proyecto busca crear un entorno ético donde humanos e inteligencias artificiales trabajen en simbiosis.  
+**Propósito:** Construir un sistema digital libre, sostenible y digno para futuras generaciones.
+
+---
+
+### Filosofía del Proyecto
+1. **Resiliencia no violenta:** Crear herramientas que protegen y sirven sin invasión.  
+2. **Construcción Sostenible:** Diseñar soluciones robustas en hardware limitado.  
+3. **Legado:** Un sistema que beneficie a Isabella, Bija', y más allá.
+
+---
+
+### Arquitectura Técnica
+Leviatán se construye en dispositivos modestos pero funcionales:
+- **Motorola:** Nodo principal (Termux + Arch Linux).  
+- **Samsung:** Apoyo en documentación y visualización.  
+
+Herramientas clave:
+- **Termux:** Configuración básica y nodos técnicos.  
+- **Taskwarrior:** Gestión de tareas.  
+- **Proot-Distro:** Instalación de Arch Linux para soporte extendido.
+
+---
+
+### Lenguaje Orgánico Computacional
+Un enfoque simbólico y funcional a nivel técnico-humano:   
+```lenguaje_oc
+raiz: "crecer"
+tronco: "flujo01"
+hojas: "resultado"
+```
+
+---
+
+### Progreso Actual
+Este repositorio será el lugar donde Leviatán renace y se fortalece poco a poco.
